@@ -1,0 +1,100 @@
+research_task:
+  description: >
+    Research the market: {market}.
+
+    Identify:
+    - target customers
+    - competitors
+    - trends
+    - opportunities
+    - pricing patterns
+    - technological factors
+    - risks
+    - open assumptions
+
+    Use web search when useful.
+  expected_output: >
+    A concise but structured market research brief in markdown.
+  agent: researcher
+  output_file: output/research.md
+
+
+bull_case_task:
+  description: >
+    Using the research findings, argue why the market "{market}" is attractive.
+
+    Focus on:
+    - growth opportunities
+    - customer pain
+    - AI leverage
+    - timing
+    - MVP feasibility
+    - differentiation potential
+  expected_output: >
+    A persuasive bull-case argument in markdown.
+  agent: bull_analyst
+  output_file: output/bull_case.md
+
+
+bear_case_task:
+  description: >
+    Using the research findings, argue why the market "{market}" may not be attractive.
+
+    Focus on:
+    - competition
+    - saturation
+    - weak willingness to pay
+    - operational complexity
+    - regulation
+    - technical challenges
+    - execution risks
+  expected_output: >
+    A persuasive bear-case argument in markdown.
+  agent: bear_analyst
+  output_file: output/bear_case.md
+
+
+judge_task:
+  description: >
+    Review the research findings, bull case, and bear case for "{market}".
+
+    Decide:
+    - whether the market is promising
+    - what the biggest opportunities are
+    - what the biggest risks are
+    - what assumptions remain uncertain
+  expected_output: >
+    A balanced verdict with:
+    - recommendation
+    - confidence score
+    - strongest bull argument
+    - strongest bear argument
+    - unresolved assumptions
+    - suggested next validation step
+  agent: judge
+  output_file: output/judge_verdict.md
+
+
+report_task:
+  description: >
+    Create a polished final market debate report for "{market}".
+
+    Use:
+    - research findings
+    - bull case
+    - bear case
+    - judge verdict
+
+    The report should contain:
+    - executive summary
+    - market overview
+    - bull case summary
+    - bear case summary
+    - final recommendation
+    - confidence score
+    - key risks
+    - next validation steps
+  expected_output: >
+    A polished executive-style markdown report.
+  agent: analyst
+  output_file: output/final_report.md
