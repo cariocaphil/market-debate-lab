@@ -1,3 +1,17 @@
+---
+title: Market Debate Lab
+emoji: 😻
+colorFrom: purple
+colorTo: indigo
+sdk: gradio
+sdk_version: 6.14.0
+python_version: '3.13'
+app_file: app.py
+pinned: false
+license: apache-2.0
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 # Market Debate Lab
 
 A multi-agent market analysis pipeline built with [CrewAI](https://docs.crewai.com/). Five specialized agents research a market, argue bull and bear cases, reach a verdict, and produce an executive report. A [Gradio](https://www.gradio.app/) UI runs the crew and displays each stage of the output.
@@ -92,3 +106,4 @@ market-debate-lab/
 ## License
 
 Add a license file if you plan to distribute this project.
+=======
