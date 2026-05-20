@@ -69,7 +69,6 @@ lancedb==0.30.2
 litellm==1.74.9
 lxml==6.1.1
 markdown-it-py==4.2.0
--e file:///Users/p.dijon.de.monteton/practice-folder/market-debate-lab
 markupsafe==3.0.3
 matplotlib-inline==0.2.2
 mdurl==0.1.2
