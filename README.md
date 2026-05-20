@@ -64,13 +64,7 @@ SERPER_API_KEY=your_serper_key
 From the project root:
 
 ```bash
-debate
-```
-
-Or:
-
-```bash
-python -m market_debate_lab.main
+python app.py
 ```
 
 Gradio opens in the browser. Click **Run market debate** to start the crew. Tabs show the final result plus each artifact (research, bull, bear, judge, report).
@@ -79,8 +73,9 @@ Gradio opens in the browser. Click **Run market debate** to start the crew. Tabs
 
 ```
 market-debate-lab/
+├── app.py                   # Gradio UI entry point
 ├── src/market_debate_lab/
-│   ├── main.py              # Gradio app and entry point
+│   ├── main.py              # CLI crew runner
 │   ├── crew.py              # CrewAI agents and tasks
 │   └── config/
 │       ├── agents.yaml      # Agent roles, goals, LLMs
@@ -92,7 +87,7 @@ market-debate-lab/
 
 ## Customization
 
-- **Market topic** — edit `FIXED_MARKET` in `src/market_debate_lab/main.py`, or extend the app to pass a user-defined `{market}` into `kickoff(inputs={"market": ...})`.
+- **Market topic** — edit `FIXED_MARKET` in `app.py`, or extend the app to pass a user-defined `{market}` into `kickoff(inputs={"market": ...})`.
 - **Agents and tasks** — adjust `src/market_debate_lab/config/agents.yaml` and `tasks.yaml`.
 - **Models** — each agent sets `llm: openai/gpt-4o-mini` in `agents.yaml`; change as needed for your provider setup.
 
@@ -106,4 +101,4 @@ market-debate-lab/
 ## License
 
 Add a license file if you plan to distribute this project.
-=======
+
