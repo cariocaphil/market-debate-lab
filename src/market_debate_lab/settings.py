@@ -1,0 +1,1 @@
+FIXED_MARKET = "The German travel guide book market in the age of AI"
